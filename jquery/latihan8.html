@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+	<title>jQuery - Chaining</title>
+	<script src="jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("p").css("color","red").css("text-transform","uppercase").css("letter-spacing","5px").slideUp(500).slideDown(500);
+			$("body").css("background","black").css("padding","100px 40px");
+			$("button").css("background","red").css("border","none").css("padding","15px 25px");
+			});
+	});
+	</script>
+</head>
+<body>
+	<p>jQuery is Crap Awesome</p>
+	<button>Click Me</button>
+</body>
+</html>
